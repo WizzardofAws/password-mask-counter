@@ -1,7 +1,6 @@
 import re,argparse
 from collections import Counter
 
-
 ### Masking each individual password; returning a string
 def maskPassword(password):
     masked_password= []
@@ -44,6 +43,7 @@ def readFile(filename=r'100k-most-used-passwords.txt'):
         huge_list= f.read().split()
         return(huge_list)
 
+# main function
 def main():
     filename= argumentPars()
     if filename:
